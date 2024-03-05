@@ -1,8 +1,7 @@
 #  The contact options.
 
-- type: github
-  icon: "fab fa-github"
-  url: 'https://github.com/FrostyLabs'
+# - type: github
+#   icon: "fab fa-github"
 
 # Uncomment and complete the url below to enable more contact options
 #
