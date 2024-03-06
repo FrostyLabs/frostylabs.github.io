@@ -29,7 +29,7 @@ github:
   username: FrostyLabs # change to your github username
 
 twitter:
-  username: twitter_username # change to your twitter username
+  username: fr0sty_9 # change to your twitter username
 
 social:
   # Change to your full name.
@@ -38,7 +38,7 @@ social:
   email: example@domain.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/fr0sty_9 # change to your twitter homepage
+    - https://x.com/fr0sty_9 # change to your twitter homepage
     - https://github.com/FrostyLabs # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
@@ -76,8 +76,8 @@ theme_mode: # [light | dark]
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-# avatar: assets/img/logo/frostylabs-logo.png
-avatar: 
+# avatar: 
+avatar: assets/img/logo/frostylabs-logo.png
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
