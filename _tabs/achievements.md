@@ -11,15 +11,13 @@ author: frosty
 
 OSCP Badge:
 
-![Image](/assets/img/achievements/offensive-security-certified-professional-oscp.png)
+![Image](/assets/img/achievements/offensive-security-certified-professional-oscp.png){: .align-left}
 
 **HackTheBox:**
 
 [
   ![HackTheBox Badge](https://www.hackthebox.eu/badge/image/115658)
 ](https://www.hackthebox.eu/badge/image/115658)
-
-<img align="left" src="https://www.hackthebox.eu/badge/image/115658">
 
 **TryHackMe**
 
