@@ -1,15 +1,16 @@
 ---
 # the default layout is 'page'
-icon: fas check-square
+icon: fas fa-check-square
 order: 2
 author: frosty
 ---
 
 # Some of my Achievements
 
-Not to brag haha...
+(low key I have no idea how to align the images to the left with GitHub MD)
 
 OSCP Badge:
+
 ![Image](/assets/img/achievements/offensive-security-certified-professional-oscp.png)
 
 
