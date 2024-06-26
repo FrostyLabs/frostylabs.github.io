@@ -19,7 +19,7 @@ OSCP Badge:
   ![HackTheBox Badge](https://www.hackthebox.eu/badge/image/115658)
 ](https://www.hackthebox.eu/badge/image/115658)
 
-<img align="left"src="https://www.hackthebox.eu/badge/image/115658">
+<img align="left" src="https://www.hackthebox.eu/badge/image/115658">
 
 **TryHackMe**
 
