@@ -1,6 +1,6 @@
 ---
 # the default layout is 'page'
-icon: check-square
+icon: fas check-square
 order: 2
 author: frosty
 ---
@@ -10,7 +10,6 @@ author: frosty
 Not to brag haha...
 
 OSCP Badge:
-
 ![Image](/assets/img/achievements/offensive-security-certified-professional-oscp.png)
 
 

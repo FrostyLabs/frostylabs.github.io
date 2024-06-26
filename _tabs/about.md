@@ -1,6 +1,6 @@
 ---
 # the default layout is 'page'
-icon: address-card-o
+icon: fas address-card-o
 order: 1
 author: frosty
 ---
