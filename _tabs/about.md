@@ -22,7 +22,7 @@ My philosophy in life can be summed up by the words of Mahatma Gandhi: "Be the c
 
 Thank you for joining me on this journey of learning, sharing, and making a difference in our world.
 
-![<img src="/assets/img/aboutme/on-top-of-the-world.jpg" width="30%">](/assets/img/aboutme/on-top-of-the-world.jpg)
+![Image](/assets/img/aboutme/on-top-of-the-world.jpg)
 
 ### Badges
 
