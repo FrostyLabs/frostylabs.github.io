@@ -22,18 +22,27 @@ My philosophy in life can be summed up by the words of Mahatma Gandhi: "Be the c
 
 Thank you for joining me on this journey of learning, sharing, and making a difference in our world.
 
-![Image](/assets/img/aboutme/on-top-of-the-world.jpg)
-
 ### Badges
 
 **HackTheBox:**
+
+<p align="left">
 
 [
   ![HackTheBox Badge](https://www.hackthebox.eu/badge/image/115658)
 ](https://www.hackthebox.eu/badge/image/115658)
 
+</p>
+
 **TryHackMe**
+
+<p align="left">
 
 [
   ![HackTheBox Badge](https://tryhackme-badges.s3.amazonaws.com/frosty.png)
 ](https://tryhackme-badges.s3.amazonaws.com/frosty.png)
+
+</p>
+
+
+![Image](/assets/img/aboutme/on-top-of-the-world.jpg)
