@@ -78,3 +78,7 @@ git commit -m "Frosty Labs Demonstration"
 git remote add origin git@github.com:YourUserName/project-folder.git
 git push -u origin master
 ```
+
+![Image](assets/img/blog/github-ssh-keys/5-test.png)
+
+![Image](assets/img/blog/github-ssh-keys/6-verification.png)
