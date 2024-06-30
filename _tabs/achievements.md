@@ -11,7 +11,7 @@ author: frosty
 
 OSCP Badge:
 
-![Image](/assets/img/achievements/offensive-security-certified-professional-oscp.png){: .align-left style="clear: left;"}
+![Image](/assets/img/achievements/offensive-security-certified-professional-oscp.png)
 
 **HackTheBox:**
 
