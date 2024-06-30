@@ -27,15 +27,15 @@ ssh-keygen -t ed25519 -C "your_email@example.com"
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 ```
 
-![Image](assets\img\blog\github-ssh-keys\1-generate-keys.png)
+![Image](assets/img/blog/github-ssh-keys/1-generate-keys.png)
 
 # 2. Imprt the SSH Key to GitHub
 
 Go to your icon on the top right, Settings, then SSH and GPG keys. Click New SSH Key on the top right. Then copy and paste your public key into the text box, like in the screenshots below.
 
-![Image](assets\img\blog\github-ssh-keys\2-import-keys.png)
+![Image](assets/img/blog/github-ssh-keys/2-import-keys.png)
 
-![Image](assets\img\blog\github-ssh-keys\3-import-keys.png)
+![Image](assets/img/blog/github-ssh-keys/3-import-keys.png)
 
 Import public key
 
@@ -49,7 +49,7 @@ $ eval `ssh-agent -s`
 $ ssh-add /home/user/.ssh/id_ed_25519
 ```
 
-![Image](assets\img\blog\github-ssh-keys\4-configure-linux.png)
+![Image](assets/img/blog/github-ssh-keys/4-configure-linux.png)
 
 ## Optional: Persistent SSH Keys
 
@@ -65,7 +65,7 @@ Then reload your terminal: source ~/.zshrc
 
 And that’s all it takes! Now you can test it out 🙂
 
-# Test it out!
+# Test it out
 
 ```bash
 git config --global user.name YourUserName
