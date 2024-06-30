@@ -10,6 +10,8 @@ tags: [blog]     # TAG names should always be lowercase
 
 *Small disclaimer: I did the "old" version of PWK (now known as PEN-200), I took the exam before all the Windows content was released.*
 
+# My OSCP Experience
+
 It’s a little surreal for me to hold my OSCP certificate in my hands. I remember about two years ago when someone said that it would be a 24-hour exam followed by a further 24 hours to write up a report. Immediately I said I could never do that and I wouldn’t even consider it. I eventually forgot about it because at the time we had not yet gone into offensive security.
 
 Later in my undergraduate degree, when we started to focus more heavily on offensive security, I realized that I had quite enjoyed it! I thought about becoming a penetration tester and what steps I might need to take to make it happen. Of course, when looking up penetration tester certifications, I rediscovered the PWK course and the OSCP certification. I did some research into the OSCP, and decided that it would be immensely challenging; however, it would be equally as helpful in terms of learning. It would not be highly valued if it were a trivial exam. I decided that I wanted to make it happen in the summer of 2019 alongside my summer internship before I started my postgraduate degree. I ended up purchasing 60 days because of the way it works with the start date. I passed on my first attempt, but I am not a penetration tester yet.
