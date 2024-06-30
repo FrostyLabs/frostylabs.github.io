@@ -26,7 +26,7 @@ Trimester 2:
 
 I was told by some faculty Napier and also recommended not to do the masters because they said that many modules are the same or already covered in the undergraduate. While this is true for Host Based Forensics, I do not agree with this in regard to the other modules. Sure, there are some similarities and I recognised some slides but overall the assessments were all different and as a whole the modules were new to me.
 
-# My Favorite Modules
+## My Favorite Modules
 
 For me it is pretty difficult to pick a single favourite module, I enjoyed most of them. I could write about all modules, but generally the bottom line is that they are all pretty good at teaching you new topics and having practical labs to build what you learned in class. However, I’d like to write about the two modules that really stood out to me, which are **Security Audit and Compliance** and **Penetration Testing**.
 
@@ -34,17 +34,17 @@ Security Audit and Compliance was a fantastic non-technical module and I wish th
 
 Penetration Testing was a great technical module delving into offensive security and to be honest was a main reason why I had joined the MSc, so it had a high expectation from me. The Penetration Testing module sets out to prepare you for the [Penetration-Testing With Kali](https://www.offensive-security.com/pwk-oscp/) course. When I applied for the MSc, I did not have any plans to take PWK however found myself passing the exam shortly before the MSc. began. If you’re interested in hearing my experience, you can check that post out too. This gave me a really big advantage to be honest, but I liked that because it meant I could take the [LinuxZoo Kali](https://linuxzoo.net/page/kali_wk1a.html) labs as further practice to solidify my knowledge, and also help others when they were struggling in the labs. You have to sit two class tests and deliver one research coursework for this. We had four options for the coursework, and I found all of those to be pretty broad. I liked that because it also gave some freedom on what specifically you want to research within the guidelines of course. This coursework had a six page (!!) limit, which was extremely challenging to adhere to. We are so used to writing ~4000 word reports for other modules, and suddenly we have to hold back to six pages – which is made tricky when you want to add diagrams or figures. Anyway, I also found that it helped a lot towards the dissertation writing style to avoid waffling and only add focussed content.
 
-# Facilities
+## Facilities
 
 The computing labs are pretty great. The machines are pretty strong, and you have two 24″ monitors which are really nice to work with. The library is a little small for my liking, it gets filled up very quickly after about week 5 or 6 in the trimester – but you can get access to the main University of Edinburgh library if you want quiet study space through the SCONUL program. The lecture halls are alright, some are better than others with desks to sit at, or rows of benches.
 
 Lectures are all recorded by the camera people who make sure to edit the videos and they were always uploaded to the online learning space within two days of the lecture. Recorded lectures are fantastic if you have an appointment which you cannot miss or you are late for whatever reason.
 
-# ENUSEC
+## ENUSEC
 
 Edinburgh Napier University Security (ENUSEC) is the cyber security society which has gotten pretty large over the past couple of years. Anyone can join if you’re interested in cyber security which is quite nice. The society does regular meet-ups in the main cyber security lab. Every now and then there will be a workshop which are usually fun practical sessions.
 
-# Improvements
+## Improvements
 
 In the penetration testing side of things, I wish that the university was more active in HackTheBox. There is a university team, but it is pretty much inactive. I also think that the LinuxZoo labs are a little outdated, and it can be buggy pretty often. I think that they could also setup some rooms in TryHackMe instead of LinuxZoo. To be honest I’d be willing to create some rooms, perhaps as additional content for the students if they are willing to use it.
 
@@ -52,7 +52,7 @@ For network security, we had troubles with the infrastructure to complete the co
 
 For incident response and malware analysis I had hoped that there would have been some reverse engineering in the coursework assignment, rather than a memory dump without the pseudo malicious executable.
 
-# Closing Thoughts
+## Closing Thoughts
 
 As a whole, I enjoyed the Advanced Security and Digital Forensics at Edinburgh Napier University. I think that the lecturers are generally passionate about what they teach, and the learning material is pretty good. I had the opportunity to learn many new things, and build new skills not only in technical areas.
 
@@ -69,7 +69,7 @@ and attending
 
 I would say that I had an overall positive experience, and I would recommend this course to someone willing to delve further into cyber security – especially for those who are looking to transition into cyber security and do an MSc.
 
-# What’s Next?
+## What’s Next?
 
 I’ll be starting my career very soon as a cyber security consultant with part of the Big 4. I’m extremely excited for the challenges that are coming my way, I hope that I can apply what I have learned at Edinburgh Napier University to launch a successful start to my career.
 
