@@ -54,7 +54,7 @@ Here are some tips that I would give, which will not spoil the content of the OS
 
 Many people will say that cherry tree is the program to use, but to be honest, I’m not sure that I would recommend it. While I was doing my exercises, the save file had corrupted. I was backing up my save file to my localhost; however, I would have lost about 2 days worth of work. I was not able to open the backup files either, so I ended up using an SQLite Database Browser to delete the most recent edits which I had made. That fixed it, but it was worrying for sure. For the exam, I switched to OneNote, which is similar to Cherry Tree, in my opinion. OneNote has other editing advantages, but I won’t get into those. The main advantage was that I would type into the browser and content would automatically be saved so I could use it on my host machine for the exam report. A little like Google Docs, but with the advantage that OneNote can be structured with trees/branches.
 
-![Image](assets\img\blog\oscp-experience\3-onenote-example.png)
+![Image](assets/img/blog/oscp-experience/3-onenote-example.png)
 
 ## 2. Get used to enumeration tools earlier
 
@@ -64,7 +64,7 @@ Tools such as NmapAutomater, Reconnoitre, AutoRecon can all be used to perform r
 
 I hacked the lab hosts and did the PWK exam from my laptop. Of course, it can get cluttered with terminals and documentation very quickly. Tmux or terminator can help with this by splitting one terminal window into many, but still being easy to switch between terminals. It’s not so necessary in my opinion but could have made the engagement feel smoother than many terminals spread across the screen.
 
-![Image](assets\img\blog\oscp-experience\4-tmux.png)
+![Image](assets/img/blog/oscp-experience/4-tmux.png)
 
 ## 4. Get some sleep!
 
