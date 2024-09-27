@@ -8,7 +8,7 @@ tags:
   - "hackthebox"
 ---
 
-![Image](images/bitlab.png)
+![Image](assets/img/writeups/hackthebox/bitlab/bitlab.png)
 
 * * *
 
