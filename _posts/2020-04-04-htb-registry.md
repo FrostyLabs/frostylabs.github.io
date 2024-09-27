@@ -28,7 +28,7 @@ Let us begin with an nmap scan to identify listening services. We get a result o
 
 The initial landing page is the standard nginx index.html page. I could not see any special information within HTML comments, so instead I decided to run a `gobuster` scan.
 
-```
+```sh
 $ gobuster dir \
   -w /usr/share/wordlists/dirb/common.txt
   -u http://10.10.10.159/
@@ -58,7 +58,7 @@ When navigating to https://10.10.10.159/ we are presented with a insecure certif
 
 I couldn't see any further information on the initial page, so let's enumerate the `docker` subdomain. Firstly, I run a gobuster scan, and see that there is a hit on `/v2`. We have to use the `-k` flag to tell Gobuster to ignore the self-signed certificate warning.
 
-```
+```sh
 gobuster dir \
   -w /usr/share/wordlists/dirb/common.txt \
   -u https://docker.registry.htb -k
