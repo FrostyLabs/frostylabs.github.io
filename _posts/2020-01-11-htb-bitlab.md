@@ -8,4 +8,4 @@ tags:
   - "hackthebox"
 ---
 
-Hello World
+![Image](assets/img/writeups/hackthebox/bitlab/bitlab.png)
