@@ -9,3 +9,5 @@ tags:
 ---
 
 # Hello World
+
+![Image](assets/img/writeups/hackthebox/obscurity/htb-obscurity.png)
