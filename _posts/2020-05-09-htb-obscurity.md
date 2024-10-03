@@ -179,7 +179,7 @@ We can use the password to switch to the root user in the robert SSH session. Wh
 
 ![Image](assets/img/writeups/hackthebox/obscurity/image-28.png)
 
-## Method 2 to get root
+### Method 2 to get root
 
 So, when we run binaries as sudo we can also execute commands as another user, e.g.
 `sudo -u foo script.sh` to run script.sh as foo user. We can do:
