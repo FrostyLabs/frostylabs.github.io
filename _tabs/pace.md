@@ -51,38 +51,54 @@ title: Pace Converter
     return `${m}:${String(s).padStart(2, "0")}`;
   }
 
-  const km = document.querySelector("#perKm");
-  const mi = document.querySelector("#perMi");
-  const ex = document.querySelector("#example");
-  let updating = false;
+  function initConverter() {
+    const km = document.querySelector("#perKm");
+    const mi = document.querySelector("#perMi");
+    const ex = document.querySelector("#example");
+    if (!km || !mi || !ex) return;
 
-  function syncFromKm() {
-    if (updating) return;
-    const secKm = parsePace(km.value);
-    if (secKm == null) { mi.value = ""; ex.textContent = ""; return; }
-    const secMi = secKm * KM_PER_MI;
-    updating = true;
-    mi.value = formatPace(secMi);
-    ex.textContent = `Example: ${km.value} min/km ≈ ${mi.value} min/mi`;
-    updating = false;
+    let updating = false;
+
+    function syncFromKm() {
+      if (updating) return;
+      const secKm = parsePace(km.value);
+      if (secKm == null) { mi.value = ""; ex.textContent = ""; return; }
+      const secMi = secKm * KM_PER_MI;
+      updating = true;
+      mi.value = formatPace(secMi);
+      ex.textContent = `Example: ${km.value} min/km ≈ ${mi.value} min/mi`;
+      updating = false;
+    }
+
+    function syncFromMi() {
+      if (updating) return;
+      const secMi = parsePace(mi.value);
+      if (secMi == null) { km.value = ""; ex.textContent = ""; return; }
+      const secKm = secMi / KM_PER_MI;
+      updating = true;
+      km.value = formatPace(secKm);
+      ex.textContent = `Example: ${km.value} min/km ≈ ${mi.value} min/mi`;
+      updating = false;
+    }
+
+    km.removeEventListener("input", syncFromKm);
+    mi.removeEventListener("input", syncFromMi);
+    km.addEventListener("input", syncFromKm);
+    mi.addEventListener("input", syncFromMi);
+
+    if (!km.value) {
+      km.value = "5:00";
+      syncFromKm();
+    } else {
+      syncFromKm();
+    }
   }
 
-  function syncFromMi() {
-    if (updating) return;
-    const secMi = parsePace(mi.value);
-    if (secMi == null) { km.value = ""; ex.textContent = ""; return; }
-    const secKm = secMi / KM_PER_MI;
-    updating = true;
-    km.value = formatPace(secKm);
-    ex.textContent = `Example: ${km.value} min/km ≈ ${mi.value} min/mi`;
-    updating = false;
-  }
-
-  km.addEventListener("input", syncFromKm);
-  mi.addEventListener("input", syncFromMi);
-
-  // Prefill an example
-  km.value = "5:00";
-  syncFromKm();
+  // Run on normal loads…
+  document.addEventListener("DOMContentLoaded", initConverter);
+  // …and also after PJAX/AJAX navigation.
+  ["pjax:complete", "pjax:success", "pjax:end"].forEach(evt =>
+    document.addEventListener(evt, initConverter)
+  );
 })();
 </script>
