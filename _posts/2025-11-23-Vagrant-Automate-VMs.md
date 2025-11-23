@@ -9,6 +9,7 @@ tags:
 - vmware
 - automation
 - lab
+- IaC
 ---
 
 # Vagrant
@@ -19,18 +20,19 @@ you recreate whole environments with a single command.
 
 I want to write a short post for myself on how to automate virtual
 machine creation for VMWare. There are plenty of resources for
-VirtualBox, but not many for VMWare. The process is almost identical, so
-this might help someone else.
+VirtualBox, but not many for VMWare. Although the process is almost identical, 
+I thought that this might help someone else.
 
-This is my first real step into infrastructure as code, and it is
+This is my first real step into infrastructure as code (IaC), and it is
 interesting to me. My goal is to build and remove an Active Directory
 lab in a clean and repeatable way, to support some future purple team
 work.
 
 # Installation
 
-I am using Windows eleven. You can install Vagrant from the Hashicorp
-website where they always provide the newest release.
+I am using Windows 11. You can install Vagrant from the Hashicorp
+website where they always provide the newest release. 
+([Download Link](https://developer.hashicorp.com/vagrant/install)).
 
 ## Vagrant VMWare Plugin
 
@@ -46,7 +48,8 @@ vagrant plugin install vagrant-vmware-desktop
 
 After this, you also need the Vagrant VMWare Utility. The plugin install
 output should include the direct download link. A restart is a good idea
-once both are installed.
+once both are installed. 
+([VMWare Utility Download Link](https://www.vagrantup.com/docs/providers/vmware/vagrant-vmware-utility))
 
 You can check the setup with:
 
@@ -67,9 +70,13 @@ PS E:\VMWare_Storage\Virtual Machines> mkdir vagrant
 PS E:\VMWare_Storage\Virtual Machines\vagrant> vagrant init
 ```
 
-This creates a Vagrantfile in the folder. Good start.
+It tells us that a Vagrantfile has been created. 
+Looks good so far.
 
 You can find suitable base images on the Vagrant discovery page.
+In this example, I will use `svetterIO/UbuntuDesktop22.04`
+You can find the box image which you want to use on this 
+[discovery page](https://portal.cloud.hashicorp.com/vagrant/discover).
 
 Add some basic content to the Vagrantfile:
 
@@ -117,4 +124,5 @@ Removing box 'svetterIO/UbuntuDesktop22.04' (v1.0) with provider 'vmware_desktop
 ```
 
 
-Thanks for reading.
+Thanks for reading :) Hopefully this helps.
+
