@@ -27,13 +27,13 @@ interesting to me. My goal is to build and remove an Active Directory
 lab in a clean and repeatable way, to support some future purple team
 work.
 
-# Installation
+## Installation
 
 I am using Windows 11. You can install Vagrant from the Hashicorp
 website where they always provide the newest release. 
 ([Download Link](https://developer.hashicorp.com/vagrant/install)).
 
-## Vagrant VMWare Plugin
+### Vagrant VMWare Plugin
 
 Hashicorp recently made their VMWare plugin free. Nice change, since it
 used to require a license. VirtualBox is free as well, but I still find
@@ -56,12 +56,12 @@ You can check the setup with:
 vagrant plugin list
 ```
 
-# Vagrant Commands
+## Vagrant Commands
 
 I keep my VMWare machines on a separate drive. Adjust paths to your own
 setup.
 
-## Initialising Vagrant
+### Initialising Vagrant
 ```
 PS C:\Users\frosty> E:\
 PS E:\> cd "VMWare_Storage\Virtual Machines"
@@ -96,7 +96,7 @@ end
 
 That is enough to begin.
 
-## Booting Vagrant Machines
+### Booting Vagrant Machines
 
 Run `vagrant up` in the folder that contains your Vagrantfile. Keep an
 eye on the output in case there are warnings.
@@ -109,9 +109,11 @@ Bringing machine 'ubuntu' up with 'vmware_desktop' provider...
 The Hashicorp documentation is very good, so it is worth reading once
 you get comfortable with the basics.
 
-## Cleaning Up
+### Cleaning Up Vagrant Machines
 
-Since this was only a test, I removed the machine and the image.
+Since this was only a test, I removed the machine and the image. 
+I want to do more in the future, but with different images. 
+More to come on that later I guess ;)
 
 ```
 PS E:\VMWare_Storage\Virtual Machines\vagrant> vagrant destroy -f
@@ -124,5 +126,6 @@ Removing box 'svetterIO/UbuntuDesktop22.04' (v1.0) with provider 'vmware_desktop
 
 
 Thanks for reading :) Hopefully this helps.
+
 
 
