@@ -4,6 +4,7 @@ author: frosty
 date: 2025-11-23
 categories:
 - development
+- Infrastructure as Code
 tags:
 - dev
 - vmware
@@ -11,8 +12,6 @@ tags:
 - lab
 - IaC
 ---
-
-# Vagrant
 
 Vagrant gives you a simple and repeatable way to build and manage
 virtual machines through code. It removes the manual setup work and lets
@@ -125,4 +124,5 @@ Removing box 'svetterIO/UbuntuDesktop22.04' (v1.0) with provider 'vmware_desktop
 
 
 Thanks for reading :) Hopefully this helps.
+
 
