@@ -1,0 +1,120 @@
+---
+title: "Vagrant: Automate Virtual Machine Creation"
+author: frosty
+date: 2025-11-23
+categories:
+- development
+tags:
+- dev
+- vmware
+- automation
+- lab
+---
+
+# Vagrant
+
+Vagrant gives you a simple and repeatable way to build and manage
+virtual machines through code. It removes the manual setup work and lets
+you recreate whole environments with a single command.
+
+I want to write a short post for myself on how to automate virtual
+machine creation for VMWare. There are plenty of resources for
+VirtualBox, but not many for VMWare. The process is almost identical, so
+this might help someone else.
+
+This is my first real step into infrastructure as code, and it is
+interesting to me. My goal is to build and remove an Active Directory
+lab in a clean and repeatable way, to support some future purple team
+work.
+
+# Installation
+
+I am using Windows eleven. You can install Vagrant from the Hashicorp
+website where they always provide the newest release.
+
+## Vagrant VMWare Plugin
+
+Hashicorp recently made their VMWare plugin free. Nice change, since it
+used to require a license. VirtualBox is free as well, but I still find
+myself using VMWare even after the Broadcom acquisition.
+
+Install the plugin with:
+
+```
+vagrant plugin install vagrant-vmware-desktop
+```
+
+After this, you also need the Vagrant VMWare Utility. The plugin install
+output should include the direct download link. A restart is a good idea
+once both are installed.
+
+You can check the setup with:
+
+```
+vagrant plugin list
+```
+
+# Vagrant Commands
+
+I keep my VMWare machines on a separate drive. Adjust paths to your own
+setup.
+
+## Initialising Vagrant
+```
+PS C:\Users\frosty> E:\
+PS E:\> cd "VMWare_Storage\Virtual Machines"
+PS E:\VMWare_Storage\Virtual Machines> mkdir vagrant
+PS E:\VMWare_Storage\Virtual Machines\vagrant> vagrant init
+```
+
+This creates a Vagrantfile in the folder. Good start.
+
+You can find suitable base images on the Vagrant discovery page.
+
+Add some basic content to the Vagrantfile:
+
+``` ruby
+Vagrant.configure("2") do |config|
+
+  config.vm.provider "vmware_desktop" do |v|
+    v.gui = true
+    v.memory = 2048
+    v.cpus = 1
+  end
+
+  config.vm.define "ubuntu" do |ubuntu|
+    ubuntu.vm.box = "svetterIO/UbuntuDesktop22.04"
+  end
+end
+```
+
+That is enough to begin.
+
+## Booting Vagrant Machines
+
+Run `vagrant up` in the folder that contains your Vagrantfile. Keep an
+eye on the output in case there are warnings.
+
+```
+E:\VMWare_Storage\Virtual Machines\vagrant> vagrant up
+Bringing machine 'ubuntu' up with 'vmware_desktop' provider...
+```
+
+The Hashicorp documentation is very good, so it is worth reading once
+you get comfortable with the basics.
+
+## Cleaning Up
+
+Since this was only a test, I removed the machine and the image.
+
+```
+PS E:\VMWare_Storage\Virtual Machines\vagrant> vagrant destroy -f
+==> ubuntu: Deleting the VM...
+PS E:\VMWare_Storage\Virtual Machines\vagrant> vagrant box list
+svetterIO/UbuntuDesktop22.04 (vmware_desktop, 1.0, (amd64))
+PS E:\VMWare_Storage\Virtual Machines\vagrant> vagrant box remove svetterIO/UbuntuDesktop22.04 --all
+Removing box 'svetterIO/UbuntuDesktop22.04' (v1.0) with provider 'vmware_desktop'...
+```
+
+
+Thanks for reading.
