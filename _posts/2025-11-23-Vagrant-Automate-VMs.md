@@ -127,5 +127,90 @@ Removing box 'svetterIO/UbuntuDesktop22.04' (v1.0) with provider 'vmware_desktop
 
 Thanks for reading :) Hopefully this helps.
 
+## Vagrant Cheat Sheet
+
+(AI generated be cautious of AI Slop, but I thought it could be useful)
+
+```
+VAGRANT(1)                     User Commands                     VAGRANT(1)
+
+NAME
+    vagrant - Create and manage reproducible development environments.
+
+SYNOPSIS
+    vagrant [command] [options]
+
+DESCRIPTION
+    Vagrant manages virtual machine environments. Commands operate on a
+    Vagrant project (a directory containing a Vagrantfile) unless otherwise
+    noted. Most operations require a Vagrantfile to be present.
+
+COMMANDS
+    init [box]
+        Create a new Vagrantfile in the current directory.
+        If a box name is provided, it is written into the Vagrantfile.
+
+    up [--provider PROVIDER] [--provision]
+        Create, configure, and boot the machine.
+        If the provider is not specified, Vagrant chooses the default.
+        --provision forces provisioners to run during startup.
+
+    halt [-f]
+        Gracefully shut down the running virtual machine.
+        -f forces an immediate power-off.
+
+    suspend
+        Save the running VM’s state to disk and stop it.
+
+    resume
+        Restore a suspended VM to the running state.
+
+    reload
+        Restart the VM and apply changes from the Vagrantfile.
+
+    destroy [-f]
+        Remove the VM and all associated provider resources.
+        -f runs without confirmation.
+
+    ssh
+        Connect to the guest machine over SSH.
+
+    ssh-config
+        Output SSH configuration for connecting manually.
+
+    status
+        Display the current state of the VM.
+
+    provision
+        Run the provisioners configured in the Vagrantfile.
+
+BOX COMMANDS
+    box list
+        List boxes currently installed on the system.
+
+    box add BOX
+        Download and install a box.
+
+    box remove BOX [--provider PROVIDER] [--all]
+        Remove a box. If --all is used, all versions are removed.
+
+GLOBAL COMMANDS
+    global-status [--prune]
+        Show status of all Vagrant environments on the system.
+        --prune removes entries for destroyed or missing VMs.
+
+PROJECT FILES
+    Vagrantfile
+        Ruby-based configuration file describing the VM environment.
+
+    .vagrant/
+        Directory storing local VM state for the current project.
+
+DEFAULT LOCATIONS
+    Boxes are stored under:
+        C:\Users\<user>\.vagrant.d\boxes\
+```
+
+
 
 
