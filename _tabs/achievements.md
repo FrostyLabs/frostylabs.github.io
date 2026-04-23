@@ -11,11 +11,11 @@ author: frosty
 
 **OSCP Badge:**
 
-<img src="/assets/img/achievements/offensive-security-certified-professional-oscp.png" style="max-width: 25%;">
+![Image](/assets/img/achievements/offensive-security-certified-professional-oscp.png)
 
 **TryHackMe SAL1 Badge:**
 
-<img src="/assets/img/achievements/thm-sal1-badge.png" style="max-width: 25%;">  
+![Image](/assets/img/achievements/thm-sal1-badge.png)
 
 **SailPoint Identity Security Cloud (ISC) Professional:**
 
@@ -23,7 +23,7 @@ author: frosty
 
 **Microsoft SC-900 Badge:**
 
-<img src="/assets/img/achievements/sc-900-badge.png" style="max-width: 25%;"> 
+![Image](/assets/img/achievements/sc-900-badge.png)  
 
 **HackTheBox Badge:**
 
