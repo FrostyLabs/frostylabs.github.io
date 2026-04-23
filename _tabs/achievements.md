@@ -11,27 +11,27 @@ author: frosty
 
 **OSCP Badge:**
 
-![Image](/assets/img/achievements/offensive-security-certified-professional-oscp.png)
+<img src="{{ site.baseurl }}/assets/img/achievements/offensive-security-certified-professional-oscp.png" style="max-width: 30%;" alt="OSCP badge">
 
-**TryHackMe SAL1 Badge:**
+**TryHackMe Security Analyst Level 1 (SAL1) Badge:**
 
-![Image](/assets/img/achievements/thm-sal1-badge.png)
+<img src="{{ site.baseurl }}/assets/img/achievements/thm-sal1-badge.png" style="max-width: 30%;" alt="SAL1 badge">
 
 **SailPoint Identity Security Cloud (ISC) Professional:**
 
-<img src="{{ site.baseurl }}/assets/img/achievements/sp-isc-professional.png" style="max-width: 25%;" alt="ISC2 Professional Certificate">
+<img src="{{ site.baseurl }}/assets/img/achievements/sp-isc-professional.png" style="max-width: 30%;" alt="ISC2 Professional Certificate">
 
 **Microsoft SC-900 Badge:**
 
-![Image](/assets/img/achievements/sc-900-badge.png)  
+<img src="{{ site.baseurl }}/assets/img/achievements/sc-900-badge.png" style="max-width: 30%;" alt="SC900 badge">
 
-**HackTheBox Badge:**
+**HackTheBox Profile:**
 
 [
   ![HackTheBox Badge](https://www.hackthebox.eu/badge/image/115658)
 ](https://www.hackthebox.eu/badge/image/115658)
 
-**TryHackMe Badge:**
+**TryHackMe Profile:**
 
 [
   ![HackTheBox Badge](https://tryhackme-badges.s3.amazonaws.com/frosty.png)
