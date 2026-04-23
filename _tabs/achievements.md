@@ -19,7 +19,7 @@ author: frosty
 
 **SailPoint Identity Security Cloud (ISC) Professional:**
 
-<img src="/assets/img/achievements/sp-isc-professional.png" style="max-width: 25%;"> 
+<img src="{{ site.baseurl }}/assets/img/achievements/sp-isc-professional.png" style="max-width: 25%;" alt="ISC2 Professional Certificate">
 
 **Microsoft SC-900 Badge:**
 
