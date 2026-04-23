@@ -11,7 +11,8 @@ author: frosty
 
 **OSCP Badge:**
 
-<img src="{{ site.baseurl }}/assets/img/achievements/offensive-security-certified-professional-oscp.png" style="max-width: 30%;" alt="OSCP badge">
+<img src="{{ site.baseurl }}/assets/img/achievements/offensive-security-certified-professional-oscp.png" style="max-width: 30%; display: block; 
+  margin-right: auto;" alt="OSCP badge">
 
 **TryHackMe Security Analyst Level 1 (SAL1) Badge:**
 
