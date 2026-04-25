@@ -12,15 +12,20 @@ print("Hello World!")
 
 ## Hello World!
 
-I welcome you to my blog revolving around information and cyber security.
+A blog about information and cyber security.
+                                                                                                                        
+I have a bachelor's and master's in cybersecurity, and spent several years in consulting doing audits, pentests, and  
+DFIR. These days I'm on the blue side, working as a cybersecurity engineer — though my interests lean toward detection engineering, SOC Operations, IAM,
+purple-teaming, and running a SOC homelab to keep the offensive skills sharp.
 
-I'm passionate about cyber security and believe in the power of knowledge sharing to make our online world safer and more secure. My interest in cyber security stems from a desire to contribute to a more informed and protected digital landscape. Through this website, I aim to share insights, tips, and resources related to offensive and defensive security practices.
+I got into security because breaking and understanding how things work is genuinely fun — and sharing that with others
+seemed like the right thing to do. The topics here range from offensive techniques to defensive practices, with the
+goal of being useful rather than exhaustive.
 
-Beyond the digital realm, I lead an active lifestyle, finding solace and challenge in endurance sports like multi-day hikes and triathlons. I also enjoy mountain biking, via ferrata, etc. These pursuits not only keep me physically fit but also instill in me a sense of discipline and resilience, qualities that are invaluable in both cyber security and life in general.
+When I'm not in front of a screen, I'm usually outside. Multi-day hikes, triathlons, mountain biking, via ferrata — I 
+like things that are hard enough to require your full attention. The physical and mental challenge is the point.
 
-My philosophy in life can be summed up by the words of Mahatma Gandhi: "Be the change that you want to see in the world." I believe that by taking proactive steps and sharing knowledge, we can each contribute to making a positive impact, whether it's in cyber security or in fostering a more compassionate and secure society.
-
-Thank you for joining me on this journey of learning, sharing, and making a difference in our world.
+This blog is a way to document what I learn and put it somewhere other people can find it. Hopefully it helps you too!
 
 ### Outdoor
 
